@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sptf.Api", "src\Sptf.Api\Sp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sptf.Domain", "src\Sptf.Domain\Sptf.Domain.csproj", "{8B2F4F35-367F-4751-A55A-5BD6C7559EA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sptf.Data", "src\Sptf.Data\Sptf.Data.csproj", "{55B87CC6-F37A-494D-AAA0-4A149734930D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{8B2F4F35-367F-4751-A55A-5BD6C7559EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B2F4F35-367F-4751-A55A-5BD6C7559EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B2F4F35-367F-4751-A55A-5BD6C7559EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B87CC6-F37A-494D-AAA0-4A149734930D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B87CC6-F37A-494D-AAA0-4A149734930D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B87CC6-F37A-494D-AAA0-4A149734930D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B87CC6-F37A-494D-AAA0-4A149734930D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
