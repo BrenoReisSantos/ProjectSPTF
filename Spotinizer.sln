@@ -1,14 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sptf.Tests.Commons", "tests\Sptf.Tests.Commons\Sptf.Tests.Commons.csproj", "{77F5BE16-AF73-47AD-A4B7-39414007141E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotinizer.Tests.Commons", "tests\Spotinizer.Tests.Commons\Spotinizer.Tests.Commons.csproj", "{77F5BE16-AF73-47AD-A4B7-39414007141E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sptf.Tests", "tests\Sptf.Tests\Sptf.Tests.csproj", "{BF367D9C-61B2-442C-8B71-7F161F1D00B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotinizer.Tests", "tests\Spotinizer.Tests\Spotinizer.Tests.csproj", "{BF367D9C-61B2-442C-8B71-7F161F1D00B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sptf.Api", "src\Sptf.Api\Sptf.Api.csproj", "{5F571BBB-EABC-4731-B140-BCBE1B0F2DE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotinizer.Api", "src\Spotinizer.Api\Spotinizer.Api.csproj", "{5F571BBB-EABC-4731-B140-BCBE1B0F2DE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sptf.Domain", "src\Sptf.Domain\Sptf.Domain.csproj", "{8B2F4F35-367F-4751-A55A-5BD6C7559EA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotinizer.Domain", "src\Spotinizer.Domain\Spotinizer.Domain.csproj", "{8B2F4F35-367F-4751-A55A-5BD6C7559EA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sptf.Data", "src\Sptf.Data\Sptf.Data.csproj", "{55B87CC6-F37A-494D-AAA0-4A149734930D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotinizer.Data", "src\Spotinizer.Data\Spotinizer.Data.csproj", "{55B87CC6-F37A-494D-AAA0-4A149734930D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotinizer.Repository", "src\Spotinizer.Repository\Spotinizer.Repository.csproj", "{CC39D8B5-4825-4DDF-A1E1-AF95C5F6C3CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +38,9 @@ Global
 		{55B87CC6-F37A-494D-AAA0-4A149734930D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B87CC6-F37A-494D-AAA0-4A149734930D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B87CC6-F37A-494D-AAA0-4A149734930D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC39D8B5-4825-4DDF-A1E1-AF95C5F6C3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC39D8B5-4825-4DDF-A1E1-AF95C5F6C3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC39D8B5-4825-4DDF-A1E1-AF95C5F6C3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC39D8B5-4825-4DDF-A1E1-AF95C5F6C3CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

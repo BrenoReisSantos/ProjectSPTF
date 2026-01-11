@@ -1,0 +1,38 @@
+﻿erDiagram
+    USER 1 to 0+ ORGANIZER: cria
+    ORGANIZER 1 to 1+ FILTER_OPERATION: filtered
+    FILTER_OPERATION 1 to 1+ OPERATION_PARAMETER: contains
+    OPERATION_PARAMETER 1+ to 1 OPERATION_PARAMETER_TYPE: is
+
+    USER {
+        guid id PK
+        string email
+        string password
+    }
+    ORGANIZER {
+        guid id PK
+        string name
+        string output_playlist_name
+        string output_playlist_id
+        string input_playlist
+        guid user_id FK
+    }
+    FILTER_OPERATION {
+        int id
+        string name
+    }
+    OPERATION_PARAMETER {
+        guid id PK
+        string name
+        int sequence_position
+        bool isList
+        int type FK
+    }
+    OPERATION_PARAMETER_TYPE {
+        int id PK
+        string name
+    }
+    GENRE {
+        int id PK
+        string name UK
+    }
