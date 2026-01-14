@@ -1,6 +1,6 @@
 ﻿namespace Sptf.Domain.Models;
 
-public class FilterOperation: TimeStampBaseModel
+public record FilterOperation: TimeStampBaseModel
 {
     public required Guid Id { get; init; }
     public required string Name { get; init; }

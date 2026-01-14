@@ -1,6 +1,6 @@
 ﻿namespace Sptf.Domain.Models;
 
-public class TimeStampBaseModel
+public record TimeStampBaseModel
 {
     public DateTime CreationDate { get; init; }
     public DateTime? LastUpdateDate { get; set; }

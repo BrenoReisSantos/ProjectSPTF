@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotinizer.Data", "src\Spot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotinizer.Repository", "src\Spotinizer.Repository\Spotinizer.Repository.csproj", "{CC39D8B5-4825-4DDF-A1E1-AF95C5F6C3CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotinizer.Services", "src\Spotinizer.Services\Spotinizer.Services.csproj", "{4507698A-3489-4578-A394-CBBAF4A0C7B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{CC39D8B5-4825-4DDF-A1E1-AF95C5F6C3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC39D8B5-4825-4DDF-A1E1-AF95C5F6C3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC39D8B5-4825-4DDF-A1E1-AF95C5F6C3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4507698A-3489-4578-A394-CBBAF4A0C7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4507698A-3489-4578-A394-CBBAF4A0C7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4507698A-3489-4578-A394-CBBAF4A0C7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4507698A-3489-4578-A394-CBBAF4A0C7B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

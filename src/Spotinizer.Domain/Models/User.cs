@@ -1,6 +1,6 @@
 ﻿namespace Sptf.Domain.Models;
 
-public class User : TimeStampBaseModel
+public record User : TimeStampBaseModel
 {
     public required Guid Id { get; init; }
     public required string Email { get; init; }
