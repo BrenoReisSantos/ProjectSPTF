@@ -21,6 +21,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Spotinizer.Data\Spotinizer.Data.csproj" />
+      <ProjectReference Include="..\Spotinizer.Repository\Spotinizer.Repository.csproj" />
+      <ProjectReference Include="..\Spotinizer.Services\Spotinizer.Services.csproj" />
     </ItemGroup>
 
 </Project>

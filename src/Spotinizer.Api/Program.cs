@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using Spotinizer.Repository;
+using Spotinizer.Services.Services;
 using Sptf.Data;
+using Sptf.Domain.Repository;
+using Sptf.Domain.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +21,9 @@ builder.Services.AddDbContext<SpotinizerContext>(options =>
     options.UseNpgsql(connectionString, config => config.MigrationsAssembly("Spotinizer.Data"));
 });
 
+builder.Services.AddTransient<IOrganizerRepository, OrganizerRepository>();
+builder.Services.AddTransient<IOrganizerService, OrganizerService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,4 +35,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.Run();
+app.MapControllers();
+
+await app.RunAsync();

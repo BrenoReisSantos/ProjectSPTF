@@ -4,7 +4,8 @@ namespace Sptf.Domain.Repository;
 
 public interface IOrganizerRepository
 {
-    Task<Organizer> CreateOrganizer(Organizer organizer);
-    Task<Organizer?> GetOrganizerById(int id);
-    Task<Organizer> UpdateOrganizer(Organizer organizer);
+    Task<Organizer> Create(Organizer organizer);
+    Task<Organizer?> GetById(Guid id);
+    Task<Organizer> UpdateAsync(Organizer organizer);
+    Task<IEnumerable<Organizer>> ListAll();
 }

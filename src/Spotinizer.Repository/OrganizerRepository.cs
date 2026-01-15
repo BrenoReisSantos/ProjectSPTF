@@ -1,4 +1,5 @@
-﻿using Sptf.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Sptf.Data;
 using Sptf.Domain.Models;
 using Sptf.Domain.Repository;
 
@@ -8,7 +9,7 @@ public class OrganizerRepository(SpotinizerContext spotinizerContext) : IOrganiz
 {
     private readonly SpotinizerContext _spotinizerContext = spotinizerContext;
 
-    public async Task<Organizer> CreateOrganizer(Organizer organizer)
+    public async Task<Organizer> Create(Organizer organizer)
     {
         var insertingOrganizer = organizer with
         {
@@ -22,9 +23,11 @@ public class OrganizerRepository(SpotinizerContext spotinizerContext) : IOrganiz
         return insertingOrganizer;
     }
 
-    public async Task<Organizer?> GetOrganizerById(int id) => await _spotinizerContext.Organizers.FindAsync(id);
+    public async Task<Organizer?> GetById(Guid id) => await _spotinizerContext.Organizers.FindAsync(id);
 
-    public async Task<Organizer> UpdateOrganizer(Organizer organizer)
+    public async Task<IEnumerable<Organizer>> ListAll() => await _spotinizerContext.Organizers.ToListAsync();
+
+    public async Task<Organizer> UpdateAsync(Organizer organizer)
     {
         var updatingOrganizer = organizer with
         {

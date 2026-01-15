@@ -1,7 +1,8 @@
 ﻿namespace Sptf.Domain.Dto;
 
-public record CreateOrganizerRequestDto
+public record UpdateOrganizerRequestDto
 {
+    public required Guid Id { get; init; }
     public required string Name { get; init; }
     public required string OutputPlaylistName { get; init; }
     public required string InputPlaylistId { get; init; }
